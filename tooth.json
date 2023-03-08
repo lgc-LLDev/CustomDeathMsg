@@ -1,0 +1,20 @@
+{
+  "format_version": 1,
+  "tooth": "github.com/lgc-LLSEDev/CustomDeathMsg",
+  "version": "0.1.0",
+  "dependencies": {},
+  "information": {
+    "name": "CustomDeathMsg",
+    "description": "自定义玩家死亡消息",
+    "author": "student_2333 <lgc2333@126.com>",
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/lgc-LLSEDev/CustomDeathMsg"
+  },
+  "placement": [
+    {
+      "source": "CustomDeathMsg.lxl.js",
+      "destination": "plugins/CustomDeathMsg.js"
+    }
+  ],
+  "possession": ["plugins/CustomDeathMsg/"]
+}
