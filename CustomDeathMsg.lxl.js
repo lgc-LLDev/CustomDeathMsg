@@ -1,7 +1,7 @@
 /* eslint-disable no-template-curly-in-string */
 /* global ll mc JsonConfigFile logger */
 // LiteXLoader Dev Helper
-/// <reference path="E:\Coding\bds\.vscode\LLSEDevHelper/Library/JS/Api.js" />
+/// <reference path="../HelperLib/src/index.d.ts"/>
 
 const defaultConf = {
   noSource: ['${player.name} 暴毙了'],
