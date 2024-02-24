@@ -1,0 +1,10 @@
+{
+  "entry": "CustomDeathMsg.js",
+  "name": "CustomDeathMsg",
+  "type": "lse-quickjs",
+  "dependencies": [
+    {
+      "name": "legacy-script-engine-quickjs"
+    }
+  ]
+}

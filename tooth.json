@@ -1,20 +1,24 @@
 {
-  "format_version": 1,
-  "tooth": "github.com/lgc-LLSEDev/CustomDeathMsg",
-  "version": "0.1.0",
-  "dependencies": {},
-  "information": {
+  "$schema": "https://raw.githubusercontent.com/lippkg/lip/main/schemas/tooth.v2.schema.json",
+  "format_version": 2,
+  "tooth": "github.com/lgc-LLDev/CustomDeathMsg",
+  "version": "0.1.1",
+  "info": {
     "name": "CustomDeathMsg",
-    "description": "自定义玩家死亡消息",
-    "author": "lgc2333",
-    "license": "Apache-2.0",
-    "homepage": "https://github.com/lgc-LLSEDev/CustomDeathMsg"
+    "description": "Customize player death message",
+    "author": "student_2333",
+    "tags": ["plugin", "lse", "quickjs"]
   },
-  "placement": [
-    {
-      "source": "CustomDeathMsg.lxl.js",
-      "destination": "plugins/CustomDeathMsg.js"
-    }
-  ],
-  "possession": ["plugins/CustomDeathMsg/"]
+  "files": {
+    "place": [
+      {
+        "src": "CustomDeathMsg.js",
+        "dest": "plugins/CustomDeathMsg/CustomDeathMsg.js"
+      },
+      {
+        "src": "manifest.json",
+        "dest": "plugins/CustomDeathMsg/manifest.json"
+      }
+    ]
+  }
 }

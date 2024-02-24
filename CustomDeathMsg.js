@@ -13,9 +13,13 @@ const config = new JsonConfigFile(
   JSON.stringify(defaultConf)
 );
 
+/**
+ * @param {keyof defaultConf} name
+ * @returns {string[]}
+ */
 function getConf(name) {
   const conf = config.get(name);
-  if (!conf || conf === []) return defaultConf[name];
+  if (!conf || !Array.isArray(conf) || !conf.length) return defaultConf[name];
   return conf;
 }
 
@@ -34,9 +38,8 @@ function getRandomInt(min, max) {
 
 /**
  * 格式化死亡信息
- * @param {string} msg
  * @param {Player} player
- * @param {Entity} source
+ * @param {Entity?} source
  */
 function getDieMsg(player, source) {
   const msgs = source ? hasSource : noSource;
@@ -66,7 +69,7 @@ mc.listen('onServerStarted', () => {
   }
 });
 
-ll.registerPlugin('CustomDeathMsg', '自定义玩家去世信息', [0, 1, 0], {
+ll.registerPlugin('CustomDeathMsg', '自定义玩家去世信息', [0, 1, 1], {
   Author: 'student_2333',
   License: 'Apache-2.0',
 });
