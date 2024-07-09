@@ -24,7 +24,7 @@
 - 当无伤害源时，可用`player`（玩家）变量，当有伤害源时，可用`player`（玩家）、`source`（伤害来源）变量
 - `player`、`source`的属性参考[玩家对象 API](https://docs.litebds.com/zh_CN/Development/GameAPI/Player.html#%E7%8E%A9%E5%AE%B6%E5%AF%B9%E8%B1%A1-%E5%B1%9E%E6%80%A7)、[实体对象 API](https://docs.litebds.com/zh_CN/Development/GameAPI/Entity.html#%E5%AE%9E%E4%BD%93%E5%AF%B9%E8%B1%A1-%E5%B1%9E%E6%80%A7)
 - 当提示文本格式化后为空，则会再换一条提示输出
-  - 所以可以搞骚操作，比如`` ${player.permLevel >= 1 ? `我超，OP ${player.name} 暴毙了，快来嘲笑他（` : ''} ``
+  - 所以可以搞骚操作，比如``${player.permLevel >= 1 ? `我超，OP ${player.name} 暴毙了，快来嘲笑他（` : ''}``
   - 但是至少要留一条必定会输出的，避免 bug
 
 ```jsonc
@@ -33,7 +33,7 @@
   "noSource": ["${player.name} 暴毙了"],
 
   // 当有伤害源时给出的提示
-  "hasSource": ["${player.name} 被 ${source.name} 裁决了"]
+  "hasSource": ["${player.name} 被 ${source.name} 裁决了"],
 }
 ```
 
